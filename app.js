@@ -11,7 +11,9 @@
             canPurchase: true,
             soldOut: false,
             images: [
-                "img/gem-02.gif"
+                "img/gem-02.gif",
+                "img/gem-05.gif",
+                "img/gem-09.gif"
             ]
         },
         {
@@ -20,7 +22,9 @@
             canPurchase: true,
             soldOut: false,
             images: [
-                "img/gem-01.gif"
+                "img/gem-01.gif",
+                "img/gem-03.gif",
+                "img/gem-04.gif"
             ]
         },
         {
@@ -29,7 +33,9 @@
             canPurchase: true,
             soldOut: false,
             images: [
-                "img/gem-06.gif"
+                "img/gem-06.gif",
+                "img/gem-07.gif",
+                "img/gem-08.gif"
             ]
         },
     ];

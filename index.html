@@ -13,7 +13,14 @@
             </h3>
             <!-- Image Gallery -->
             <div class="gallery">
-                <img ng-src="{{product.images[0]}}"/>
+                <div class="img-wrap">
+                    <img ng-src="{{product.images[0]}}"/>
+                </div>
+                <ul class="img-thumbnails clearfix">
+                    <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+                        <img ng-src="{{image}}"/>
+                    </li>
+                </ul>
             </div>
             <button ng-show="product.canPurchase">Add to cart</button>
         </div>
