@@ -3,12 +3,12 @@
     <head>
         <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
     </head>
-    <body ng-controller='StoreController as store'>
-        <div ng-repeat="product in store.products" ng-hide="{{store.product.soldOut}}">
+    <body class="container" ng-controller='StoreController as store'>
+        <div class="product row" ng-repeat="product in store.products" ng-hide="{{store.product.soldOut}}">
             <h3>
                 {{product.name}}
-                <em>
-                    {{product.price}}
+                <em class="pull-right">
+                    {{product.price | currency }}
                 </em>
             </h3>
             <button ng-show="product.canPurchase">Add to cart</button>
