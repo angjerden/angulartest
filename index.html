@@ -4,13 +4,14 @@
         <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
     </head>
     <body ng-controller='StoreController as store'>
-        <div>
+        <div ng-hide="{{store.product.soldOut}}">
             <h3>
                 {{store.product.name}}
                 <em>
                     {{store.product.price}}
                 </em>
             </h3>
+            <button ng-show="{{store.product.canPurchase}}">Add to cart</button>
         </div>
         <script type="text/javascript" src="lib/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
