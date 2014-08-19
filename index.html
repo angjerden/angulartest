@@ -11,6 +11,10 @@
                     {{product.price | currency }}
                 </em>
             </h3>
+            <!-- Image Gallery -->
+            <div class="gallery">
+                <img ng-src="{{product.images[0]}}"/>
+            </div>
             <button ng-show="product.canPurchase">Add to cart</button>
         </div>
         <script type="text/javascript" src="lib/angular.min.js"></script>
