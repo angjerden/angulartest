@@ -11,9 +11,7 @@
             canPurchase: true,
             soldOut: false,
             images: [
-                "img/gem-02.gif",
-                "img/gem-05.gif",
-                "img/gem-09.gif"
+
             ]
         },
         {
