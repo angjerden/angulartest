@@ -19,6 +19,8 @@
 
     var gems = [
         {   name: 'Azurite',
+            description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+            shine: 8,
             price: 2.95,
             canPurchase: true,
             soldOut: false,
@@ -30,6 +32,8 @@
         },
         {
             name: 'Bloodstone',
+            description: "Origin of the Bloodstone is unknown, hence its low value. It has a very high shine and 12 sides, however.",
+            shine: 9,
             price: 5.95,
             canPurchase: true,
             soldOut: false,
@@ -41,6 +45,8 @@
         },
         {
             name: 'Zircon',
+            description: "Zircon is our most coveted and sought after gem. You will pay much to be the proud owner of this gorgeous and high shine gem.",
+            shine: 70,
             price: 3.95,
             canPurchase: true,
             soldOut: false,
