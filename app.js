@@ -9,11 +9,7 @@
         this.current = 0;
 
         this.setCurrent = function(current) {
-            if(current !== null) {
-                this.current = current;
-            } else {
-                current = 0;
-            }
+            this.current = current || 0;
         };
     });
 

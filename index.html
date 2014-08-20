@@ -12,9 +12,9 @@
                 </em>
             </h3>
             <!-- Image Gallery -->
-            <div class="gallery" ng-show="product.images.length > 0">
+            <div class="gallery" ng-show="product.images.length" ng-controller="GalleryController as gallery">
                 <div class="img-wrap">
-                    <img ng-src="{{product.images[0]}}"/>
+                    <img ng-src="{{product.images[gallery.current]}}"/>
                 </div>
                 <ul class="img-thumbnails clearfix">
                     <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
