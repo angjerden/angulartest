@@ -24,6 +24,7 @@
             </div>
             <button ng-show="product.canPurchase">Add to cart</button>
 
+            <!-- Product Tabs -->
             <section class="tab" ng-controller="TabController as tab">
                 <ul class="nav nav-pills">
                     <li ng-class="{active: tab.isSet(1)}">
@@ -36,14 +37,19 @@
                         <a href ng-click="tab.setTab(3)">Reviews</a>
                     </li>
                 </ul>
-                <div ng-show="tab.isSet(1)">
-                    <h4>Description</h4>
-                    <blockquote>{{product.description}}</blockquote>
+
+                <!-- Description Tab's Content -->
+                <div ng-show="tab.isSet(1)" ng-include="'product-description.html'">
+
                 </div>
+
+                <!-- Spec Tab's Content -->
                 <div ng-show="tab.isSet(2)">
                     <h4>Specs</h4>
                     <blockquote>Shine:{{product.shine}}</blockquote>
                 </div>
+
+                <!-- Review Tab's Content -->
                 <div ng-show="tab.isSet(3)">
                     <ul>
                         <h4>Reviews</h4>
